@@ -17,7 +17,7 @@
 ## 📥 Installation & Setup
 ### 🔹 Clone the Repository
 ```bash
-git clone https://github.com/yourusername/InstaConnect.git
+git clone https://github.com/Hrithick123/FirstImpression.git
 cd InstaConnect
 ```
 
