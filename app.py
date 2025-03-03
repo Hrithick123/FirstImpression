@@ -37,7 +37,7 @@ def chat():
         # ✅ Second API call - Extract only the key interest names
         model2 = genai.GenerativeModel("gemini-2.0-pro-exp-02-05")
         response2 = model2.generate_content(
-            f"Suggest me actions to impress them on meeting them for the first time. Extract only the five key interest areas (as bullet points) of them from the following text:\n\n{detailed_interests}."
+            f"Suggest me actions to impress them on meeting them for the first time. Extract and list only the five key interest areas (as bullet points) from the following text:\n\n{detailed_interests}."
         )
 
         if response2 and hasattr(response2, "text") and response2.text.strip():
