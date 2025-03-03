@@ -24,7 +24,7 @@ def chat():
         # ✅ First API call - Get detailed interests
         model1 = genai.GenerativeModel("gemini-2.0-pro-exp-02-05")
         response1 = model1.generate_content(
-            f"Can you analyze the public posts of this public Facebook profile with this exact username: {user_input}. "
+            f"Can you analyze the recent 5 to 10 (if present) public posts of this public Facebook profile with this exact username or url: {user_input}. "
             f"Search Google for this Facebook profile and its publicly available posts. "
             f"Analyze and give me five of their areas of interest."
         )   
